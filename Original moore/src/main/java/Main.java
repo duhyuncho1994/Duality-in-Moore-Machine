@@ -35,7 +35,7 @@ public final class Main {
 
     public static void main(String[] args) throws IOException {
         long start = System.currentTimeMillis();
-        GraphvizParserMoore p = new GraphvizParserMoore(Paths.get("C:\\Users\\LG\\Documents\\registerworlds12\\register10.dot"));
+        GraphvizParserMoore p = new GraphvizParserMoore(Paths.get("C:\\Users\\LG\\Documents\\registerworlds12\\register10.dot"));  // The path.file could be changed by user's wish
         CompactMoore<String, String> target0 = p.createMachine();
         CompactMooreLS<String, String> target = new CompactMooreLS<>(target0);
         Alphabet<String> inputs = target0.getInputAlphabet();
